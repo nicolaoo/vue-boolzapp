@@ -3,6 +3,7 @@
     --grey: rgb(218,219,211);
     --dark_grey: rgb(192,192,193);
     --azure: rgb(142,218,252);
+    --light_grey: rgb(243,238,234); 
 }
 
 img {
@@ -45,7 +46,7 @@ img {
 }
 
 .main-app{
-    background-color: #cddc39;
+    background-color: var(--grey);
     height: 100%;
     width: calc(100% - 35%);
     position: absolute;
@@ -63,10 +64,6 @@ img {
     gap: 15px;
     margin: 5px;
     color: var(--dark_grey);
-}
-
-.profile-user{
-    background-color: var(--grey);
 }
 
 .bell-notice{
@@ -104,4 +101,8 @@ img {
 
 .contact-list {
     overflow-y: auto;
+}
+
+.footer-app, .header-app, .profile-user{
+    background-color: var(--light_grey);
 }
