@@ -26,10 +26,6 @@ img {
     overflow: hidden;
 }
 
-.sidebar{
-    background-color: red;
-}
-
 .main{
     position: absolute;
     top: 26px;
@@ -40,7 +36,7 @@ img {
 
 .sidebar{
     width: 35%;
-    background-color: azure;
+    background-color: white;
     height: 100%;
 }
 
@@ -86,6 +82,26 @@ img {
     aspect-ratio: 4/1;
     text-align: center;
 }
+
 .notice {
     background-color: var(--azure);
+}
+
+.input-group-text {
+    background-color: white!important;
+}
+
+.last-message{
+    margin-bottom: 0;
+    font-size: 7px;
+}
+
+.time-contact{
+    font-size: 7px;
+    padding: 5px;
+    font-weight: 500;
+}
+
+.contact-list {
+    overflow-y: auto;
 }
