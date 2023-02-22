@@ -1,0 +1,53 @@
+:root{
+    --green: rgb(0,150,136);
+    --grey: rgb(218,219,211);
+
+}
+
+#bg-green{
+    background-color: var(--green);
+    height: 145px;
+    overflow: hidden;
+}
+
+#bg-grey{
+    background-color: var(--grey);
+    flex-grow: 1;
+    height: calc(100vh - 145px);
+    overflow: hidden;
+}
+
+.all-app{
+    overflow: hidden;
+}
+
+.sidebar{
+    background-color: red;
+}
+
+.main{
+    position: absolute;
+    top: 26px;
+    bottom: 26px;
+    right: 195px;
+    left: 195px;
+}
+
+.sidebar{
+    width: 35%;
+    background-color: azure;
+    height: 100%;
+}
+
+.app-container{
+    height: 100%;
+}
+
+.main-app{
+    background-color: #cddc39;
+    height: 100%;
+    width: calc(100% - 35%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
