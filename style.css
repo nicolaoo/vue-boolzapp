@@ -1,10 +1,11 @@
 :root{
     --green: rgb(0,150,136);
     --grey: rgb(218,219,211);
-
+    --dark_grey: rgb(192,192,193);
+    --azure: rgb(142,218,252);
 }
 
-.img{
+img {
     width: 100%;
 }
 
@@ -54,4 +55,37 @@
     position: absolute;
     top: 0;
     right: 0;
+}
+
+.avatar-user {
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.icon-side {
+    display: flex;
+    gap: 15px;
+    margin: 5px;
+    color: var(--dark_grey);
+}
+
+.profile-user{
+    background-color: var(--grey);
+}
+
+.bell-notice{
+    font-size: 10px;
+}
+
+.icon-bell {
+    color: var(--azure);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 52px;
+    padding: 3px;
+    aspect-ratio: 4/1;
+    text-align: center;
+}
+.notice {
+    background-color: var(--azure);
 }
