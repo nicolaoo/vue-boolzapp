@@ -76,13 +76,13 @@
 
                             <div class="contact-list">
                                 <div class="card-contact d-flex">
-                                    <div class= "d-flex col-7 me-auto">
+                                    <div v-for="contact in contacts" class= "d-flex col-7 me-auto">
                                         <figure class=" mb-0 col-2">
                                             <img class="avatar-user" src="./avatar/avatar (1).svg" alt="">
                                         </figure>
                                         <div class="col-10">
                                             <p class="ms-3 mb-0 text-align-sart">
-                                                Nicola
+                                                {{ contact.name }}
                                             </p>
                                             <p class="ms-3 text-secondary last-message">
                                                 Ultimo messaggio inviato
