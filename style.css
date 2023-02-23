@@ -93,7 +93,7 @@ img {
 }
 
 .contact-list {
-    overflow-y: auto;
+    overflow-x: auto;
 }
 
 
