@@ -4,6 +4,12 @@
     --dark_grey: rgb(192,192,193);
     --azure: rgb(142,218,252);
     --light_grey: rgb(243,238,234); 
+    --pistacchio: rgb(213,249,186);
+}
+
+ul {
+    text-decoration: none;
+    list-style-type:none;
 }
 
 html {
@@ -123,8 +129,51 @@ img {
 
 .message-app{
     background-image: url("./avatar/sfondo_booleazz.jpg");
+    padding: 40px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .header-app {
     border-left: 1px solid var(--grey);
 }
+
+.chat {
+    display: flex;
+    border-radius: 13px;
+    padding: 8px;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.time-chat {
+    font-size: 8px;
+    align-self: flex-end;
+}
+
+.send {
+    background-color: var(--pistacchio);
+    align-self: flex-end;
+}
+
+.receive {
+    background-color: white;
+    align-self: flex-start;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
