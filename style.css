@@ -6,6 +6,10 @@
     --light_grey: rgb(243,238,234); 
 }
 
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
 img {
     width: 100%;
 }
