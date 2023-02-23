@@ -35,6 +35,10 @@ img {
     left: 195px;
 }
 
+/***********    
+    SIDEBAR
+*************/
+
 .sidebar{
     width: 35%;
     background-color: white;
@@ -43,27 +47,6 @@ img {
 
 .app-container{
     height: 100%;
-}
-
-.main-app{
-    background-color: var(--grey);
-    height: 100%;
-    width: calc(100% - 35%);
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.avatar-user {
-    border-radius: 50px;
-    margin: 5px;
-}
-
-.icon-side {
-    display: flex;
-    gap: 15px;
-    margin: 5px;
-    color: var(--dark_grey);
 }
 
 .bell-notice{
@@ -90,11 +73,11 @@ img {
 
 .last-message{
     margin-bottom: 0;
-    font-size: 7px;
+    font-size: 10px;
 }
 
 .time-contact{
-    font-size: 7px;
+    font-size: 8px;
     padding: 5px;
     font-weight: 500;
 }
@@ -103,10 +86,41 @@ img {
     overflow-y: auto;
 }
 
+
+
+/********** 
+  MAIN-APP
+***********/
+
+.main-app{
+    background-color: var(--grey);
+    height: 100%;
+    width: calc(100% - 35%);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.avatar-user {
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.icon-side {
+    display: flex;
+    gap: 15px;
+    margin: 5px;
+    color: var(--dark_grey);
+}
+
 .footer-app, .header-app, .profile-user{
     background-color: var(--light_grey);
 }
 
 .message-app{
     background-image: url("./avatar/sfondo_booleazz.jpg");
+}
+
+.header-app {
+    border-left: 1px solid var(--grey);
 }
