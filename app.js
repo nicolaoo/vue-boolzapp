@@ -8,7 +8,7 @@ createApp({
             contacts: [
         {
             name: 'Michele',
-            avatar: './avatar/avatar.svg',
+            avatar: './img/myAvatar.png',
             visible: true,
             messages: [
                 {
@@ -30,7 +30,7 @@ createApp({
         },
         {
             name: 'Fabio',
-            avatar: './avatar/avatar(1).svg',
+            avatar: './img/myAvatar (1).png',
             visible: true,
             messages: [
                 {
@@ -52,7 +52,7 @@ createApp({
         },
         {
             name: 'Samuele',
-            avatar: './avatar/avatar(2).svg',
+            avatar: './img/myAvatar (9).png',
             visible: true,
             messages: [
                 {
@@ -74,7 +74,7 @@ createApp({
         },
         {
             name: 'Alessandro B.',
-            avatar: './avatar/avatar(3).svg',
+            avatar: './img/myAvatar (3).png',
             visible: true,
             messages: [
                 {
@@ -91,7 +91,7 @@ createApp({
         },
         {
             name: 'Alessandro L.',
-            avatar: './avatar/avatar(4).svg',
+            avatar: './img/myAvatar (4).png',
             visible: true,
             messages: [
                 {
@@ -108,7 +108,7 @@ createApp({
         },
         {
             name: 'Claudia',
-            avatar: './avatar/avatar(5).svg',
+            avatar: './img/myAvatar (5).png',
             visible: true,
             messages: [
                 {
@@ -130,7 +130,7 @@ createApp({
         },
         {
             name: 'Federico',
-            avatar: './avatar/avatar(6).svg',
+            avatar: './img/myAvatar (6).png',
             visible: true,
             messages: [
                 {
@@ -147,7 +147,7 @@ createApp({
         },
         {
             name: 'Davide',
-            avatar: './avatar/avatar(7).svg',
+            avatar: './img/myAvatar (7).png',
             visible: true,
             messages: [
                 {
