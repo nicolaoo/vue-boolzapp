@@ -181,7 +181,24 @@ createApp({
             this.currentContact = index
         },
         getTextUser(){
-            console.log(this.messUser)
+            
+            let text = this.messUser.trim()
+
+            if (text === '' ) {
+                this.newMessage = ''
+                return
+            }
+
+            const newMessage = { 
+                message: this.messUser,
+                status: 'sent'
+            }
+            
+            let messageArray = this.contacts[this.currentContact].messages
+
+            messageArray.push(newMessage)
+            console.log(messageArray)
+            this.messUser = ''
         },
     }
 }).mount('#app')
