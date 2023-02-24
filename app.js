@@ -170,7 +170,8 @@ createApp({
             contacts: contacts,
             currentContact: 0,
             messUser: '',
-
+            contact: '',
+            
         }
 
     },
@@ -203,16 +204,48 @@ createApp({
             setTimeout(function (){
                 
                 let newMessage = { 
-                    message: 'tutto bene',
+                    message: 'ok',
                     status: 'received',
                     date: '10/01/2020 15:51:00'
                 }
 
                 messageArray.push(newMessage) 
                 
-            }, 3000)
+            }, 1000)
             
 
         },
-    }
+
+        // searchContact () {
+        //     console.log(this.contacts, this.contact)
+
+        //     let nameOfContacts = this.contacts[this.currentContact].name
+        //     let minContactArray = nameOfContacts.toLowerCase()
+        //     let minContactUser = this.contact.toLowerCase()
+
+        //     for(let i = 0; i < contacts.length; i++) {
+
+        //     }
+
+        //     if(minContactUser.includes(minContactArray)){
+                
+        //         console.log('è giusto perchè:', minContactArray, 'è uguale a:', minContactUser)
+                
+        //     } else {
+                
+        //         console.log('è sbagliato')
+        //     }
+        // },
+    },
+
+    // watch: {
+    //     // whenever question changes, this function will run
+    //     question(newQuestion, oldQuestion) {
+
+    //         newQuestion = contact
+    //       if (newQuestion.includes(this.contacts.name)) {
+    //         this.getAnswer()
+    //       }
+    //     }
+    //   },
 }).mount('#app')

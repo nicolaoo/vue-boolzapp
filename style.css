@@ -8,8 +8,7 @@
 }
 
 ul {
-    text-decoration: none;
-    list-style-type:none;
+    list-style-type: none;
 }
 
 html {
@@ -155,7 +154,7 @@ img {
     padding: 8px;
     justify-content: space-between;
     gap: 20px;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 .time-chat {
@@ -174,13 +173,6 @@ img {
     align-self: flex-start;
 
 }
-
-.visible-text{
-    display: none;
-}
-
-
-
 
 
 
