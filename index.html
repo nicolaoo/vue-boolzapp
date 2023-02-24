@@ -124,7 +124,7 @@
                         </div>
                         <ul  class="message-app flex-grow-1">
                             <li v-for="text in contacts[currentContact].messages" 
-                            :class="text.status === 'sent' ? 'sent' : 'receive' " 
+                            :class="text.status === 'sent' ? 'sent' : 'received' " 
                             class="chat sent">
 
                                 <p class="m-0">
@@ -134,7 +134,7 @@
                                     {{text.date}}
                                 </span>
                             </li>
-                            <!-- <li class="chat receive">
+                            <!-- <li class="chat received">
                                 <p class="m-0">
                                     {{text.messages[1].message}}
                                 </p>

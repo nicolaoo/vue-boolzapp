@@ -171,7 +171,6 @@ createApp({
             currentContact: 0,
             messUser: '',
 
-
         }
 
     },
@@ -189,9 +188,10 @@ createApp({
                 return
             }
 
-            const newMessage = { 
+            let newMessage = { 
                 message: this.messUser,
-                status: 'sent'
+                status: 'sent',
+                date: '10/01/2020 15:51:00'
             }
             
             let messageArray = this.contacts[this.currentContact].messages
@@ -199,6 +199,20 @@ createApp({
             messageArray.push(newMessage)
             console.log(messageArray)
             this.messUser = ''
+
+            setTimeout(function (){
+                
+                let newMessage = { 
+                    message: 'tutto bene',
+                    status: 'received',
+                    date: '10/01/2020 15:51:00'
+                }
+
+                messageArray.push(newMessage) 
+                
+            }, 3000)
+            
+
         },
     }
 }).mount('#app')
