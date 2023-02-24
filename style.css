@@ -93,7 +93,15 @@ img {
 }
 
 .contact-list {
-    overflow-x: auto;
+    overflow: auto;
+}
+
+.card-contact:hover{
+    background-color: var(--light_grey);
+}
+
+.active{
+    background-color: var(--light_grey);
 }
 
 
@@ -128,12 +136,13 @@ img {
 }
 
 .message-app{
-    background-image: url("./avatar/sfondo_booleazz.jpg");
+    background-image: url("./img/sfondo_booleazz.jpg");
     padding: 40px;
     margin: 0;
     display: flex;
     flex-direction: column;
     gap: 15px;
+    overflow: auto;
 }
 
 .header-app {
@@ -152,9 +161,10 @@ img {
 .time-chat {
     font-size: 8px;
     align-self: flex-end;
+    margin-left: auto;
 }
 
-.send {
+.sent {
     background-color: var(--pistacchio);
     align-self: flex-end;
 }
@@ -165,7 +175,9 @@ img {
 
 }
 
-
+.visible-text{
+    display: none;
+}
 
 
 

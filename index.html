@@ -75,8 +75,12 @@
                             </div>
 
                             <div class="contact-list">
-                                <div class="card-contact flex-column d-flex">
-                                    <div v-for="contact in contacts" class= "d-flex col-7 me-auto">
+                                <div v-for="(contact,index) in contacts" 
+                                :class="index === currentContact ? 'active' : '' " 
+                                class="card-contact pb-1 d-flex"
+                                @click="changeContact(index)">
+
+                                    <div  class= "d-flex col-7 me-auto">
                                         <figure class=" mb-0 col-2">
                                             <img class="avatar-user" :src="contact.avatar" alt="">
                                         </figure>
@@ -103,10 +107,10 @@
                             <div class="user-app p-2 d-flex justify-content-between">
                                 <div class="user col-2 d-flex align-items-center">
                                     <figure class=" mb-0 col-3">
-                                        <img class="avatar-user" src="./img/myAvatar (2).png" alt="">
+                                        <img class="avatar-user" :src="contacts[currentContact].avatar" alt="">
                                     </figure>
                                     <p class="ms-3 mb-0">
-                                        Nicola
+                                        {{contacts[currentContact].name}}
                                     </p>
                                 </div>
                                 <div class="icon-side align-items-center">
@@ -118,31 +122,34 @@
 
                             </div>
                         </div>
-                        <ul class="message-app flex-grow-1">
-                            <li class="chat send">
+                        <ul  class="message-app flex-grow-1">
+                            <li v-for="text in contacts[currentContact].messages" 
+                            :class="text.status === 'sent' ? 'sent' : 'receive' " 
+                            class="chat sent">
+
                                 <p class="m-0">
-                                    ciao come stai?
+                                    {{text.message}} - {{text.status}}
+                                </p>
+                                <span class="time-chat">
+                                    {{text.date}}
+                                </span>
+                            </li>
+                            <!-- <li class="chat receive">
+                                <p class="m-0">
+                                    {{text.messages[1].message}}
+                                </p>
+                                <span class="time-chat">
+                                    {{text.messages[1].date}}
+                                </span>
+                            </li> -->
+                            <!-- <li class="chat send">
+                                <p class="m-0">
+                                    {{text.messages[2].message}}
                                 </p>
                                 <span class="time-chat">
                                     12:00
                                 </span>
-                            </li>
-                            <li class="chat receive">
-                                <p class="m-0">
-                                    bene! Tu?
-                                </p>
-                                <span class="time-chat">
-                                    12:00
-                                </span>
-                            </li>
-                            <li class="chat send">
-                                <p class="m-0">
-                                    Non c'è male
-                                </p>
-                                <span class="time-chat">
-                                    12:00
-                                </span>
-                            </li>
+                            </li> -->
                         </ul>
                         <div class="footer-app d-flex text-center align-items-center">
                             <div class="col-2">
