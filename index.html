@@ -156,7 +156,7 @@
                                 <i class="fa-regular fa-face-smile"></i>
                             </div>
                             <div class="col-8 p-2">
-                                <input type="text" class="form-control p-1" 
+                                <input v-model="messUser" @keyup.enter="getTextUser" type="text" class="form-control p-1" 
                                 id="exampleInputEmail1" aria-describedby="emailHelp"
                                 placeholder="Scrivi un messaggio">
                             </div>

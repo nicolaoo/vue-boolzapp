@@ -169,7 +169,8 @@ createApp({
         return {
             contacts: contacts,
             currentContact: 0,
-            
+            messUser: '',
+
 
         }
 
@@ -178,6 +179,9 @@ createApp({
     methods:{
         changeContact(index){
             this.currentContact = index
-        }
+        },
+        getTextUser(){
+            console.log(this.messUser)
+        },
     }
 }).mount('#app')
