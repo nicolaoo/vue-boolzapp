@@ -141,7 +141,8 @@ img {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 .header-app {
@@ -161,6 +162,7 @@ img {
     font-size: 8px;
     align-self: flex-end;
     margin-left: auto;
+    
 }
 
 .sent {
@@ -174,9 +176,13 @@ img {
 
 }
 
+.dropdown {
+    opacity: 0;
+}
 
-
-
+.dropdown:hover {
+    opacity: 0.9;
+}
 
 
 

@@ -171,6 +171,7 @@ createApp({
             currentContact: 0,
             messUser: '',
             contact: '',
+            cancel: 'delete_message',
             
         }
 
@@ -214,6 +215,12 @@ createApp({
             }, 1000)
             
 
+        },
+
+        deleteContact(remove) {
+            console.log('cancella')
+
+            this.contacts.splice(remove, 1)
         },
 
         // searchContact () {
