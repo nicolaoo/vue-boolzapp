@@ -1,5 +1,6 @@
 const { createApp } = Vue
 
+
 const contacts= [
             {
                 name: 'Michele',
@@ -170,8 +171,9 @@ createApp({
             contacts: contacts,
             currentContact: 0,
             messUser: '',
-            contact: '',
+            contactUser: '',
             cancel: 'delete_message',
+            
             
         }
 
@@ -181,6 +183,7 @@ createApp({
         changeContact(index){
             this.currentContact = index
         },
+
         getTextUser(){
             
             let text = this.messUser.trim()
@@ -189,25 +192,27 @@ createApp({
                 this.newMessage = ''
                 return
             }
+            
+            // const date = this.getDate('dd/LL/yyyy HH:mm:ss')
 
             let newMessage = { 
                 message: this.messUser,
                 status: 'sent',
-                date: '10/01/2020 15:51:00'
+                date: ''
             }
-            
+
             let messageArray = this.contacts[this.currentContact].messages
 
             messageArray.push(newMessage)
             console.log(messageArray)
             this.messUser = ''
 
-            setTimeout(function (){
+            setTimeout(() => {
                 
                 let newMessage = { 
                     message: 'ok',
                     status: 'received',
-                    date: '10/01/2020 15:51:00'
+                    date: ''
                 }
 
                 messageArray.push(newMessage) 
@@ -221,6 +226,24 @@ createApp({
             console.log('cancella')
 
             this.contacts.splice(remove, 1)
+        },
+
+        getDate(format) {
+            const now = DateTime.now()
+            if (!format) {
+                format = 'dd/LL/yyyy'   // se il parametro format nn cè userà un formato standard
+            }
+            return now.toformat(format)
+        },
+
+        isHidden(contact) {
+            let name = contact.name.toLowerCsae()
+            let spaceSearch = this.contactUser.trim()
+
+            const search = name.includes(spaceSearch)
+
+           return false
+
         },
 
         // searchContact () {

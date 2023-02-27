@@ -103,7 +103,17 @@ img {
     background-color: var(--light_grey);
 }
 
+.delete-user-icon {
+    padding: 3px;
+    border-radius: 999px;
+    font-size: 8px;
+    aspect-ratio: 2/1;
+    text-align: center;
+}
 
+.hidden{
+    display: none;
+}
 
 /********** 
   MAIN-APP
